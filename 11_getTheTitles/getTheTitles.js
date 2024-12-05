@@ -4,7 +4,7 @@ const getTheTitles = function(array) {
         newarr += (array[i].title + ",")
     }
     let newnewarr = newarr.split(",")
-    delete newnewarr[-1]
+    newnewarr.pop()
     return newnewarr
 };
 
